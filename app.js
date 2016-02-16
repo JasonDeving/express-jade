@@ -12,7 +12,7 @@ app.get('/', function(req, res){
     res.render('home')
 });
 
-// Tell expres to listen for request (start server) port and ip args are only for c9.io
+// Tell express to listen for request (start server) port and ip args are only for c9.io
 app.listen(process.env.PORT, process.env.IP, function(){
     console.log('server has started localhost:3000');
 });
