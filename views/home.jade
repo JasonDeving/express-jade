@@ -1,20 +1,33 @@
 doctype html
-html(lang="en")
+html(lang='en')
   head
-    title= pageTitle
-    script(type='text/javascript').
-      if (foo) {
-         bar(1 + 5)
-      }
+    title Jade
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    // Latest compiled and minified CSS
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
   body
     h1 Jade - node template engine
     #container.col
-      if youAreUsingJade
-        p You are amazing
-      else
-        p Get on it!
-      p.
-        Jade is a terse and simple
-        templating language with a
-        strong focus on performance
-        and powerful features.
+      p You are amazing
+      p
+        | Jade is a terse and simple
+        | templating language with a
+        | strong focus on performance
+        | and powerful features.
+    .container
+      .jumbotron
+        h1 My First Bootstrap Page
+        p Resize this responsive page to see the effect!
+      .row
+        .col-sm-4
+          h3 Column 1
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+          p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+        .col-sm-4
+          h3 Column 2
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+          p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
+        .col-sm-4
+          h3 Column 3
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit...
+          p Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...
